@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/favorite_item_bg"
+    android:contentDescription="TODO"
+    android:importantForAccessibility="no"
+    android:padding="8dp">
+
+    <!-- Place Image -->
+    <ImageView
+        android:id="@+id/placeImage"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/temple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/placeTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Place Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/placeImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/heartIcon"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp" />
+
+    <!-- Heart Icon -->
+    <ImageView
+        android:id="@+id/heartIcon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        app:tint="#FF6B6B"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

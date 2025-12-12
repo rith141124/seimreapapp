@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">seimreab</string>
+    <string name="welcome_to_siem_reap">Welcome To Siem Reap</string>
+    <string name="setting">Setting</string>
+    <string name="general">General</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="edit_profile">Edit Profile</string>
+</resources>
