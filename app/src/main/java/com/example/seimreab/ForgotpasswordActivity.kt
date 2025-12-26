@@ -15,5 +15,16 @@ class ForgotpasswordActivity : AppCompatActivity() {
               startActivity(intent)
 
           }
+          binding.btnEnter.setOnClickListener {
+              val phone = binding.etPhone.text.toString().trim()
+              val email = binding.etEmail.text.toString().trim()
+
+          }
+
+          binding.btnChangePassword.setOnClickListener {
+              val code = binding.etCode.text.toString().trim()
+
+          }
       }
+
 }

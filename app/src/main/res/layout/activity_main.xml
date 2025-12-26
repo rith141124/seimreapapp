@@ -141,23 +141,23 @@
         android:layout_marginTop="12dp">
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@drawable/social_button_bg "
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_white"
             android:src="@drawable/google"/>
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_white"
             android:layout_marginStart="16dp"
-            android:background="@drawable/social_button_bg"
             android:src="@drawable/fb"/>
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_white"
             android:layout_marginStart="16dp"
-            android:background="@drawable/social_button_bg"
             android:src="@drawable/apple"/>
     </LinearLayout>
 

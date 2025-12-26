@@ -26,19 +26,15 @@ class HomeActivity : AppCompatActivity() {
            val intent = Intent(this, SeimreabActivity::class.java)
            startActivity(intent)
        }
-       binding.setting.setOnClickListener {
+       binding.icst.setOnClickListener {
            val intent = Intent(this, SettingActivity::class.java)
            startActivity(intent)
        }
-       binding.profile.setOnClickListener {
+       binding.icpf.setOnClickListener {
            val intent = Intent(this, ProfileActivity::class.java)
            startActivity(intent)
        }
-       binding.setting.setOnClickListener {
-           val intent = Intent(this, SettingActivity::class.java)
-           startActivity(intent)
-       }
-       binding.fav.setOnClickListener {
+       binding.icfav.setOnClickListener {
            val intent = Intent(this, FavoriteActivity::class.java)
            startActivity(intent)
        }

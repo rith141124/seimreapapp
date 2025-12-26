@@ -15,5 +15,9 @@ class SeimreabActivity : AppCompatActivity() {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
+       binding.pubstreeett.setOnClickListener {
+           val intent = Intent(this, PubstreetActivity::class.java)
+           startActivity(intent)
+       }
     }
 }

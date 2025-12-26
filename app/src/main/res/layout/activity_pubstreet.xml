@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B2A4A">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Pub Street"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgTemple"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ps"
+        android:background="@drawable/edit_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:orientation="horizontal"
+        android:id="@+id/txtDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/direction"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgTemple"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:text="https://maps.app.goo.gl/j2THcRLLxEgrgLHV9"
+        android:textColor="#B3E5FC"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDirection" />
+
+    <ImageView
+        android:id="@+id/imgMap"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="384dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMap" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Save to Favorites"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMap" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ichome"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icfav"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorite"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icpf"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icst"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -115,6 +115,7 @@
                         android:textSize="14sp" />
 
                     <ImageView
+                        android:id="@+id/pubstreeett"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:src="@drawable/ps"

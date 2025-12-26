@@ -9,8 +9,6 @@
     android:contentDescription="TODO"
     android:importantForAccessibility="no"
     android:padding="8dp">
-
-    <!-- Place Image -->
     <ImageView
         android:id="@+id/placeImage"
         android:layout_width="120dp"
@@ -20,8 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
-
-    <!-- Title -->
     <TextView
         android:id="@+id/placeTitle"
         android:layout_width="0dp"
@@ -35,18 +31,15 @@
         app:layout_constraintEnd_toStartOf="@+id/heartIcon"
         android:paddingStart="10dp"
         android:paddingTop="20dp" />
-
-    <!-- Heart Icon -->
     <ImageView
         android:id="@+id/heartIcon"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:src="@drawable/back"
+        android:src="@drawable/icheart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        app:tint="#FF6B6B"
         tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

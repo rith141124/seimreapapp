@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#061B2D">
@@ -45,15 +43,16 @@
             android:id="@+id/etSearch"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Search..."
             android:background="@android:color/transparent"
+            android:hint="Search..."
+            android:minHeight="48dp"
             android:paddingStart="12dp"
             android:textColor="#000000"
             android:textColorHint="#888888"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/imgSearch"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imgSearch"
@@ -98,8 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:src="@drawable/temple"
-                android:scaleType="centerCrop"
-                android:background="@drawable/image_round_bg"/>
+                android:scaleType="centerCrop" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,7 +173,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/fav"
+                android:id="@+id/icfav"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/icfav"/>
@@ -195,7 +193,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/profile"
+                android:id="@+id/icpf"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/icpf"/>
@@ -215,7 +213,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/setting"
+                android:id="@+id/icst"
                 android:layout_width="18dp"
                 android:layout_height="22dp"
                 android:src="@drawable/icst" />

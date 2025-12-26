@@ -7,14 +7,14 @@
     android:background="#062849">
     <ImageView
         android:id="@+id/back"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:padding="4dp"
         android:src="@drawable/back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="35dp"
         app:tint="#FFFFFF" />
     <TextView
         android:id="@+id/tvRegister"

@@ -4,8 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#062147">
-
-    <!-- Back Button -->
     <ImageView
         android:id="@+id/back"
         android:layout_width="24dp"
@@ -16,8 +14,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         app:tint="#FFFFFF" />
-
-    <!-- Title -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -30,8 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"/>
-
-    <!-- Google Button -->
     <LinearLayout
         android:id="@+id/googleBtn"
         android:layout_width="120dp"
@@ -48,8 +42,6 @@
             android:layout_height="50dp"
             android:src="@drawable/google" />
     </LinearLayout>
-
-    <!-- Email Label -->
     <TextView
         android:id="@+id/emailLabel"
         android:layout_width="wrap_content"
@@ -61,8 +53,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="24dp"
         android:layout_marginTop="55dp" />
-
-    <!-- Email Input -->
     <EditText
         android:id="@+id/emailInput"
         android:layout_width="0dp"
@@ -78,8 +68,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp" />
-
-    <!-- Password Label -->
     <TextView
         android:id="@+id/passwordLabel"
         android:layout_width="wrap_content"
@@ -91,8 +79,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp" />
-
-    <!-- Password Input -->
     <EditText
         android:id="@+id/passwordInput"
         android:layout_width="0dp"
@@ -109,8 +95,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp" />
-
-    <!-- Forgot Password -->
     <TextView
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
@@ -122,8 +106,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp" />
-
-    <!-- Sign In Button -->
     <Button
         android:id="@+id/signInBtn"
         android:layout_width="0dp"

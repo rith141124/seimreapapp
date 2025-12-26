@@ -11,6 +11,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Seimreab">
         <activity
+            android:name=".CreatePinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaphromActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BanteaysreyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhreskhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BayonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PubstreetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pubstreetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kulenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bapournActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AngkorwatActivity"
+            android:exported="false" />
+        <activity
             android:name=".FavoriteActivity"
             android:exported="false" />
         <activity

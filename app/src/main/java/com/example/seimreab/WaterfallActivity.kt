@@ -1,5 +1,6 @@
 package com.example.seimreab
 import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.example.seimreab.databinding.ActivityWaterfallBinding
 
@@ -12,7 +13,10 @@ class WaterfallActivity : AppCompatActivity() {
         binding.btnBack.setOnClickListener {
             finish()
         }
-
+        binding.kulen.setOnClickListener {
+            val intent = Intent(this, KulenActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

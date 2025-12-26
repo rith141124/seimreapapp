@@ -12,14 +12,31 @@ class Register1Activity : AppCompatActivity() {
        binding = ActivityRegister1Binding.inflate(layoutInflater)
        setContentView(binding.root)
        binding.back.setOnClickListener {
-           val intent = Intent(this, RegisterActivity::class.java)
-           startActivity(intent)
+           finish()
        }
        binding.btnSave.setOnClickListener {
+           val username = binding.etUsername.text.toString().trim()
+           val password = binding.etPassword.text.toString().trim()
+           val confirmPassword = binding.etConfirmPassword.text.toString().trim()
+           if (username.isEmpty()) {
+               binding.etUsername.error = "Username required"
+               return@setOnClickListener
+           }
+
+           if (password.isEmpty()) {
+               binding.etPassword.error = "Password required"
+               return@setOnClickListener
+           }
+
+           if (password != confirmPassword) {
+               binding.etConfirmPassword.error = "Passwords do not match"
+               return@setOnClickListener
+           }
            val intent = Intent(this, Register2Activity::class.java)
+           intent.putExtra("USERNAME", username)
            startActivity(intent)
+           finish()
        }
-
    }
-
 }
+

@@ -9,8 +9,20 @@ class SettingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySettingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         binding.back.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+            finish()
+        }
+        binding.btnChangePassword.setOnClickListener {
+            val intent = Intent(this, ChangePasswordActivity::class.java)
+            startActivity(intent)
+        }
+        binding.changepin.setOnClickListener {
+            val intent = Intent(this, ChangePinActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cteatepin.setOnClickListener {
+            val intent = Intent(this, CreatePinActivity::class.java)
             startActivity(intent)
         }
 

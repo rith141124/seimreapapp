@@ -12,13 +12,31 @@ class Register2Activity : AppCompatActivity() {
         binding = ActivityRegister2Binding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.back.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+            finish()
+        }
+        binding.btnEnter.setOnClickListener {
+            val phone = binding.etPhone.text.toString().trim()
+
+            if (phone.isEmpty()) {
+                binding.etPhone.error = "Phone number required"
+                return@setOnClickListener
+            }
+
+            // TODO: Send SMS verification code
         }
         binding.btnSave.setOnClickListener {
-            val intent = Intent(this, Register3Activity::class.java)
-            startActivity(intent)
-        }
+            val code = binding.etCode.text.toString().trim()
 
+            if (code.isEmpty()) {
+                binding.etCode.error = "Verification code required"
+                return@setOnClickListener
+            }
+
+            // TODO: Verify SMS code
+            val intent = Intent(this, Register3Activity::class.java)
+            intent.putExtra("PHONE", binding.etPhone.text.toString())
+            startActivity(intent)
+            finish()
+        }
     }
 }
